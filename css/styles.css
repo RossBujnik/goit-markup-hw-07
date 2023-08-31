@@ -58,6 +58,7 @@ body {
 	}
 
 	.menu {
+		display: none;
 		font-family: Roboto;
 		color: #212121;
 		font-size: 14px;
@@ -106,7 +107,7 @@ body {
 	.brand-name01 {
 		font-family: Raleway;
 		color: #212121;
-		font-size: 26px;
+		font-size: 24px;
 		font-weight: 700;
 		line-height: 1, 17;
 		text-decoration: none;
@@ -119,13 +120,10 @@ body {
 		line-height: 1, 17;
 		text-decoration: none;
 	}
-	.menu-logo-gaps {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 46px;
-		padding-right: 371px;
+	.header-hamburger {
+		justify-content: end;
 	}
+
 	.contacts-gaps {
 		display: none;
 		display: flex;
@@ -134,7 +132,7 @@ body {
 		cursor: pointer;
 	}
 	.contacts-gaps-icons {
-		display: flex;
+		display: none;
 		flex-direction: row;
 		font-family: Roboto;
 		color: #757575;
@@ -167,7 +165,7 @@ body {
 		text-transform: none;
 		overflow: hidden;
 		margin: 0 auto;
-		height: 600px;
+		height: 400px;
 		background-image: linear-gradient(
 				rgba(47, 48, 58, 0.4),
 				rgba(47, 48, 58, 0.4)
@@ -176,13 +174,17 @@ body {
 		background-position: center;
 	}
 	h1 {
-		font-size: 44px;
+		color: #fff;
+		text-align: center;
+		font-family: Roboto;
+		font-size: 26px;
+		font-style: normal;
 		font-weight: 900;
-		padding-top: 200px;
-		padding-bottom: 40px;
-		color: #ffffff;
-		line-height: 1.36;
-		letter-spacing: 0.06em;
+		line-height: 42px; /* 161.538% */
+		letter-spacing: 1.56px;
+		text-transform: uppercase;
+		padding-top: 118px;
+		padding-bottom: 30px;
 	}
 	.main-button {
 		background-color: #2196f3;
@@ -239,30 +241,20 @@ body {
 
 	/* Nasze atuty */
 
-	.lorem {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: row;
-		padding-top: 94px;
-		gap: 30px;
-		padding-top: 30px;
-	}
 	.lorem-gap {
 		gap: 30px;
 	}
 	.lorem-icons {
-		display: block;
-		justify-content: space-between;
-		flex-direction: row;
+		display: flex;
+		flex-direction: column;
 		gap: 30px;
 		padding-top: 94px;
 	}
 	.lorem-elements-icons {
+		text-align: center;
 		background-color: #f5f4fa;
 		padding-top: 25px;
-		padding-right: 102.34px;
 		padding-bottom: 25px;
-		padding-left: 102.34px;
 	}
 	.main {
 		color: #212121;
@@ -292,10 +284,11 @@ body {
 	h2 {
 		font-family: Roboto;
 		color: #212121;
-		font-size: 36px;
-		padding-top: 94px;
+		font-size: 28px;
+		padding-top: 60px;
 		font-weight: 700;
-		line-height: 1, 17;
+		line-height: normal;
+		letter-spacing: 0.84px;
 		text-align: center;
 	}
 	img {
@@ -304,7 +297,7 @@ body {
 		height: auto;
 	}
 	.activity {
-		display: flex;
+		display: block;
 		padding-top: 50px;
 		padding-bottom: 94px;
 		justify-content: space-between;
@@ -341,16 +334,18 @@ body {
 	}
 
 	.our-team {
-		display: flex;
+		display: block;
 		justify-content: space-between;
 		padding-top: 50px;
 		padding-bottom: 94px;
+		gap: 30px;
 	}
 	/* material shadow v1 */
 	.our-team-02 {
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 			0px 2px 1px rgba(0, 0, 0, 0.2);
 		border-radius: 0px 0px 4px 4px;
+		padding-bottom: 30px;
 	}
 
 	h3 {
@@ -360,8 +355,8 @@ body {
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 1, 17;
+		text-align: center;
 		padding-top: 30px;
-		padding-left: 99px;
 	}
 
 	.position {
@@ -372,7 +367,7 @@ body {
 		font-weight: 400;
 		line-height: 1, 17;
 		text-align: center;
-		padding-top: 16px;
+		padding-top: 10px;
 		border-bottom-left-radius: 4px;
 		border-top-right-radius: 4px;
 	}
@@ -392,7 +387,8 @@ body {
 		justify-content: center;
 		width: 44px;
 		height: 44px;
-		padding: 10px;
+		padding-top: 10px;
+		padding-bottom: 36px;
 		color: #afb1b8;
 		fill: currentColor;
 		border-radius: 50%;
@@ -409,12 +405,12 @@ body {
 
 	.clients {
 		display: flex;
-		justify-content: space-between;
-		flex-direction: row;
+		flex-direction: column;
 		padding-top: 50px;
 		padding-bottom: 94px;
 	}
 	.clients-elements {
+		text-align: center;
 		color: #afb1b8;
 		fill: currentColor;
 		border: 1px solid #afb1b8;
@@ -435,22 +431,24 @@ body {
 		background-color: #2f303a;
 	}
 	.brand-name03 {
-		font-family: Raleway;
 		color: #2196f3;
-		font-size: 26px;
+		text-align: center;
+		font-family: Raleway;
+		font-size: 24px;
+		font-style: normal;
 		font-weight: 700;
-		line-height: 1, 17;
-		text-decoration: none;
+		line-height: normal;
+		letter-spacing: 0.72px;
 	}
 
 	.brand-name04 {
+		color: #fff;
 		font-family: Raleway;
-		color: #ffffff;
-		font-size: 26px;
+		font-size: 24px;
+		font-style: normal;
 		font-weight: 700;
-		line-height: 1, 17;
-		text-decoration: none;
-		padding-bottom: 9px;
+		line-height: normal;
+		letter-spacing: 0.72px;
 	}
 	.adress-regular {
 		padding-bottom: 60px;
@@ -479,8 +477,10 @@ body {
 		padding-right: 70px;
 	}
 	.footer-section-1 {
-		float: left;
 		padding-top: 60px;
+	}
+	.footer-brand-position {
+		justify-content: space-between;
 	}
 	.footer-section-2 {
 		float: left;
@@ -1027,10 +1027,9 @@ body {
 	}
 	.menu-logo-gaps {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		gap: 46px;
-		padding-right: 371px;
 	}
 	.contacts-gaps {
 		display: none;
@@ -1080,6 +1079,7 @@ body {
 			),
 			url("../images/main-background.jpg");
 		background-position: center;
+		padding-bottom: 60px;
 	}
 	h1 {
 		font-size: 44px;
@@ -1145,23 +1145,10 @@ body {
 
 	/* Nasze atuty */
 
-	.lorem {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: row;
-		padding-top: 94px;
-		gap: 30px;
-		padding-top: 30px;
-	}
-	.lorem-gap {
-		gap: 30px;
-	}
 	.lorem-icons {
 		display: flex;
 		justify-content: space-between;
 		flex-direction: row;
-		gap: 30px;
-		padding-top: 94px;
 	}
 	.lorem-elements-icons {
 		background-color: #f5f4fa;
@@ -1176,7 +1163,6 @@ body {
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 1, 17;
-		padding-bottom: 10px;
 	}
 	.contents {
 		font-family: Roboto;
