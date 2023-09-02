@@ -1006,7 +1006,8 @@ body {
 	}
 
 	.underline {
-		position: relative;
+		display: flex;
+		justify-content: space-between;
 		color: #2196f3;
 	}
 	.underline::after {
@@ -1049,12 +1050,13 @@ body {
 		align-items: center;
 		justify-content: space-between;
 		gap: 46px;
-		padding-right: 371px;
+		padding-right: 83px;
 	}
 	.contacts-gaps {
 		display: flex;
-		align-items: center;
-		gap: 50px;
+		flex-direction: column;
+		align-items: baseline;
+		gap: 10px;
 		cursor: pointer;
 	}
 	.contacts-gaps-icons {
@@ -1166,44 +1168,50 @@ body {
 
 	/* Nasze atuty */
 
-	.lorem {
-		padding-top: 94px;
-		gap: 30px;
-		padding-top: 30px;
+	.lorem-padding {
+		padding-bottom: 30px;
 	}
 	.lorem-gap {
 		gap: 30px;
 	}
 	.lorem-icons {
 		display: inline-flex;
-		flex-direction: row;
-		justify-content: center;
-		gap: 30px;
-		padding-top: 94px;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		flex-direction: column;
+		padding-top: 60px;
 	}
 	.lorem-elements-icons {
 		text-align: center;
 		background-color: #f5f4fa;
+		width: 354px;
+		height: 120px;
 		padding-top: 25px;
-		padding-right: 142px;
 		padding-bottom: 25px;
-		padding-left: 142px;
 	}
 	.main {
-		font-family: Roboto;
 		color: #212121;
+		text-align: left;
+		font-family: Roboto;
 		font-size: 14px;
+		font-style: normal;
 		font-weight: 700;
-		line-height: 1, 17;
-		padding-bottom: 10px;
+		line-height: normal;
+		letter-spacing: 0.42px;
+		padding-top: 30px;
 	}
 	.contents {
-		font-family: Roboto;
+		width: 354px;
+		height: 75px;
 		color: #757575;
+		font-family: Roboto;
 		font-size: 14px;
+		font-style: normal;
 		font-weight: 400;
-		line-height: 1, 71;
-		width: 270px;
+		line-height: 24px; /* 171.429% */
+		letter-spacing: 0.42px;
+		padding-bottom: 30px;
+		padding-top: 10px;
 	}
 
 	/* Czym się zajmujemy */
@@ -1261,10 +1269,10 @@ body {
 
 	.our-team {
 		display: inline-flex;
+		flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		flex-wrap: wrap;
 		padding-top: 50px;
 		padding-bottom: 94px;
 		gap: 30px;
@@ -1274,8 +1282,9 @@ body {
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 			0px 2px 1px rgba(0, 0, 0, 0.2);
 		border-radius: 0px 0px 4px 4px;
+		width: 354px;
+		height: 536px;
 	}
-
 	h3 {
 		font-family: Roboto;
 		color: #212121;
@@ -1333,6 +1342,7 @@ body {
 	.clients {
 		display: inline-flex;
 		flex-direction: row;
+		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
