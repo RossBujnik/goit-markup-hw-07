@@ -47,11 +47,12 @@ body {
 @media screen and (max-width: 767px) {
 	.header-settings {
 		display: flex;
+		justify-content: space-between;
 		height: 60px;
 		align-items: center;
 	}
 	.menu-logo-gaps {
-		display: inline-flex;
+		display: flex;
 		flex-direction: row;
 		align-items: center;
 		float: left;
@@ -60,22 +61,19 @@ body {
 		justify-content: space-between;
 	}
 	.header-hamburger {
-		float: right;
+		display: flex;
+		justify-content: space-between;
 	}
 	.header-border {
 		border-bottom: #ececec;
 		border-bottom-style: solid;
 		border-width: 1px;
+		display: flex;
+		justify-content: space-between;
 	}
 
 	.menu {
 		display: none;
-		font-family: Roboto;
-		color: #212121;
-		font-size: 14px;
-		font-weight: 500;
-		align-items: center;
-		line-height: 1, 17;
 	}
 	.menu:hover {
 		color: #2196f3;
@@ -134,22 +132,9 @@ body {
 
 	.contacts-gaps {
 		display: none;
-		display: flex;
-		align-items: center;
-		gap: 50px;
-		cursor: pointer;
 	}
 	.contacts-gaps-icons {
 		display: none;
-		flex-direction: row;
-		font-family: Roboto;
-		color: #757575;
-		font-size: 14px;
-		font-weight: 500;
-		line-height: 1.17;
-		text-decoration: none;
-		color: #757575;
-		fill: #757575;
 	}
 	.contacts-gaps-icons:hover {
 		color: #2196f3;
@@ -342,11 +327,16 @@ body {
 	/* Nasz zespół */
 	.team {
 		background-color: #f5f4fa;
-		padding-bottom: 60px;
 	}
 
 	.our-team {
-		display: block;
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		padding-top: 50px;
+		padding-bottom: 94px;
 		gap: 30px;
 	}
 	/* material shadow v1 */
@@ -354,9 +344,11 @@ body {
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 			0px 2px 1px rgba(0, 0, 0, 0.2);
 		border-radius: 0px 0px 4px 4px;
-		gap: 10px;
 	}
-
+	.our-team-02-svg {
+		width: 450px;
+		height: 460px;
+	}
 	h3 {
 		font-family: Roboto;
 		color: #212121;
@@ -396,8 +388,7 @@ body {
 		justify-content: center;
 		width: 44px;
 		height: 44px;
-		padding-top: 10px;
-		padding-bottom: 36px;
+		padding: 10px;
 		color: #afb1b8;
 		fill: currentColor;
 		border-radius: 50%;
@@ -409,13 +400,12 @@ body {
 		fill: #ffffff;
 		background: #2196f3;
 	}
-
 	/* Nasi klienci */
 
 	.clients {
 		display: inline-flex;
 		flex-direction: row;
-		justify-content: center;
+		justify-content: space-between;
 		flex-wrap: wrap;
 		gap: 30px;
 		padding-bottom: 60px;
@@ -425,8 +415,13 @@ body {
 		color: #afb1b8;
 		fill: currentColor;
 		border: 1px solid #afb1b8;
+		width: 210px;
+		height: 92px;
 		border-radius: 4px;
-		padding: 5px 30.73px 5.773px 31px;
+		padding-left: 52px;
+		padding-top: 16px;
+		padding-right: 52px;
+		padding-bottom: 16px;
 	}
 	.clients-elements:hover {
 		color: #2196f3;
@@ -967,9 +962,13 @@ body {
 		padding-bottom: 20px;
 	}
 }
+
+/* TABLET */
+
 @media screen and (min-width: 768px) {
 	.header-settings {
 		display: flex;
+		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
 		height: 80px;
@@ -1042,9 +1041,17 @@ body {
 		line-height: 1, 17;
 		text-decoration: none;
 	}
-
-	.contacts-gaps {
+	.header-hamburger {
 		display: none;
+	}
+	.menu-logo-gaps {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 46px;
+		padding-right: 371px;
+	}
+	.contacts-gaps {
 		display: flex;
 		align-items: center;
 		gap: 50px;
@@ -1084,23 +1091,24 @@ body {
 		text-transform: none;
 		overflow: hidden;
 		margin: 0 auto;
-		height: 600px;
+		height: 400 px;
+		flex-shrink: 0;
 		background-image: linear-gradient(
 				rgba(47, 48, 58, 0.4),
 				rgba(47, 48, 58, 0.4)
 			),
 			url("../images/main-background.jpg");
 		background-position: center;
-		padding-bottom: 60px;
 	}
 	h1 {
-		font-size: 44px;
+		font-size: 26px;
 		font-weight: 900;
-		padding-top: 200px;
+		padding-top: 118px;
 		padding-bottom: 40px;
 		color: #ffffff;
-		line-height: 1.36;
-		letter-spacing: 0.06em;
+		line-height: 42px; /* 161.538% */
+		letter-spacing: 1.56px;
+		text-transform: uppercase;
 	}
 	.main-button {
 		background-color: #2196f3;
@@ -1110,6 +1118,7 @@ body {
 		line-height: 1.875;
 		width: 200px;
 		padding: 10px 0;
+		margin-bottom: 118px;
 		letter-spacing: 0.06em;
 	}
 
@@ -1157,17 +1166,28 @@ body {
 
 	/* Nasze atuty */
 
+	.lorem {
+		padding-top: 94px;
+		gap: 30px;
+		padding-top: 30px;
+	}
+	.lorem-gap {
+		gap: 30px;
+	}
 	.lorem-icons {
-		display: flex;
-		justify-content: space-between;
+		display: inline-flex;
 		flex-direction: row;
+		justify-content: center;
+		gap: 30px;
+		padding-top: 94px;
 	}
 	.lorem-elements-icons {
+		text-align: center;
 		background-color: #f5f4fa;
 		padding-top: 25px;
-		padding-right: 102.34px;
+		padding-right: 142px;
 		padding-bottom: 25px;
-		padding-left: 102.34px;
+		padding-left: 142px;
 	}
 	.main {
 		font-family: Roboto;
@@ -1175,6 +1195,7 @@ body {
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 1, 17;
+		padding-bottom: 10px;
 	}
 	.contents {
 		font-family: Roboto;
@@ -1239,10 +1260,14 @@ body {
 	}
 
 	.our-team {
-		display: flex;
-		justify-content: space-between;
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
 		padding-top: 50px;
 		padding-bottom: 94px;
+		gap: 30px;
 	}
 	/* material shadow v1 */
 	.our-team-02 {
@@ -1258,8 +1283,8 @@ body {
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 1, 17;
+		text-align: center;
 		padding-top: 30px;
-		padding-left: 99px;
 	}
 
 	.position {
@@ -1270,7 +1295,7 @@ body {
 		font-weight: 400;
 		line-height: 1, 17;
 		text-align: center;
-		padding-top: 16px;
+		padding-top: 10px;
 		border-bottom-left-radius: 4px;
 		border-top-right-radius: 4px;
 	}
@@ -1306,17 +1331,25 @@ body {
 	/* Nasi klienci */
 
 	.clients {
-		display: flex;
-		justify-content: space-between;
+		display: inline-flex;
 		flex-direction: row;
-		padding-top: 50px;
-		padding-bottom: 94px;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 30px;
+		padding-bottom: 60px;
+		padding-top: 30px;
 	}
 	.clients-elements {
+		align-items: center;
+		text-align: center;
 		color: #afb1b8;
 		fill: currentColor;
 		border: 1px solid #afb1b8;
+		height: 92px;
+		width: 226px;
 		border-radius: 4px;
+		padding: 5px 30.73px 5.773px 31px;
 	}
 	.clients-elements:hover {
 		color: #2196f3;
