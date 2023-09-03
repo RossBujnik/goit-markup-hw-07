@@ -233,47 +233,62 @@ body {
 	}
 
 	/* Nasze atuty */
-	.lorem-padding {
-		padding-bottom: 30px;
-	}
-	.lorem-gap {
-		gap: 30px;
-	}
-	.lorem-icons {
-		display: flex;
-		flex-direction: column;
 
-		padding-top: 60px;
-	}
-	.lorem-elements-icons {
-		text-align: center;
-		background-color: #f5f4fa;
-		padding-top: 25px;
-		padding-bottom: 25px;
-	}
-	.main {
-		color: #212121;
-		text-align: center;
-		font-family: Roboto;
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-		letter-spacing: 0.42px;
+	.lorem {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		padding-top: 94px;
+		gap: 30px;
 		padding-top: 30px;
 	}
-	.contents {
-		color: #757575;
-		font-family: Roboto;
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 24px; /* 171.429% */
-		letter-spacing: 0.42px;
-		padding-bottom: 30px;
-		padding-top: 10px;
+	.lorem-padding {
+		overflow-y: 0;
+	}
+	.lorem-icons {
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 60px auto;
+		padding: 0;
+		gap: 30px;
+		text-align: center;
+	}
+	.lorem-icons > li {
+		margin-bottom: 30px;
 	}
 
+	.lorem-elements-icons {
+		background-color: #ffffff;
+		width: 270px;
+		height: 251px;
+	}
+
+	.lorem-elements-icons-svg {
+		background: #f5f4fa;
+		border-radius: 4px;
+		width: 100%;
+		height: 120px;
+		padding: 25px 100px;
+	}
+
+	.main {
+		font-family: Roboto;
+		color: #212121;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1, 17;
+		padding-bottom: 10px;
+	}
+	.contents {
+		font-family: Roboto;
+		color: #757575;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1, 71;
+		width: 270px;
+		padding-bottom: 94px;
+	}
 	/* Czym się zajmujemy */
 
 	h2 {
@@ -1174,52 +1189,61 @@ body {
 
 	/* Nasze atuty */
 
-	.lorem-padding {
-		padding-bottom: 30px;
-	}
-	.lorem-gap {
+	.lorem {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		padding-top: 94px;
 		gap: 30px;
+		padding-top: 30px;
+	}
+	.lorem-padding {
+		overflow-y: 0;
 	}
 	.lorem-icons {
 		display: inline-flex;
-		flex-wrap: wrap;
+		flex-direction: row;
 		justify-content: space-between;
-		flex-direction: column;
-		padding-top: 60px;
-	}
-	.lorem-elements-icons {
+		margin: 60px auto;
+		padding: 0;
+		gap: 30px;
 		text-align: center;
-		background-color: #f5f4fa;
-		width: 354px;
-		height: 120px;
-		padding-top: 25px;
-		padding-bottom: 25px;
 	}
-	.main {
-		color: #212121;
-		text-align: left;
-		font-family: Roboto;
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-		letter-spacing: 0.42px;
-		padding-top: 30px;
-	}
-	.contents {
-		width: 354px;
-		height: 75px;
-		color: #757575;
-		font-family: Roboto;
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 24px; /* 171.429% */
-		letter-spacing: 0.42px;
-		padding-bottom: 30px;
-		padding-top: 10px;
+	.lorem-icons > li {
+		margin-bottom: 30px;
 	}
 
+	.lorem-elements-icons {
+		background-color: #ffffff;
+		width: 270px;
+		height: 251px;
+	}
+
+	.lorem-elements-icons-svg {
+		background: #f5f4fa;
+		border-radius: 4px;
+		width: 100%;
+		height: 120px;
+		padding: 25px 100px;
+	}
+
+	.main {
+		font-family: Roboto;
+		color: #212121;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 1, 17;
+		padding-bottom: 10px;
+	}
+	.contents {
+		font-family: Roboto;
+		color: #757575;
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 1, 71;
+		width: 270px;
+		padding-bottom: 94px;
+	}
 	/* Czym się zajmujemy */
 
 	h2 {
@@ -2116,40 +2140,41 @@ body {
 
 	/* Nasze atuty */
 
-	.lorem {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: row;
-		padding-top: 94px;
-		gap: 30px;
-		padding-top: 30px;
-	}
-	.lorem-gap {
-		gap: 30px;
-	}
 	.lorem-icons {
-		display: flex;
-		justify-content: space-between;
+		display: inline-flex;
 		flex-direction: row;
-		gap: 30px;
-		padding-top: 94px;
+		justify-content: space-between;
+		margin: 60px auto;
+		padding-top: 34px;
+		text-align: center;
 	}
+	.lorem-icons > li {
+		margin-bottom: 30px;
+	}
+
 	.lorem-elements-icons {
-		background-color: #f5f4fa;
-		padding-top: 25px;
-		padding-right: 102.34px;
-		padding-bottom: 25px;
-		padding-left: 102.34px;
+		background-color: #ffffff;
 	}
+
+	.lorem-elements-icons-svg {
+		background: #f5f4fa;
+		border-radius: 4px;
+		width: 100%;
+		height: 120px;
+		padding: 25px 100px;
+	}
+
 	.main {
+		text-align: left;
 		font-family: Roboto;
 		color: #212121;
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 1, 17;
-		padding-bottom: 10px;
+		padding-top: 30px;
 	}
 	.contents {
+		text-align: left;
 		font-family: Roboto;
 		color: #757575;
 		font-size: 14px;
@@ -2160,11 +2185,14 @@ body {
 
 	/* Czym się zajmujemy */
 
+	.section-activity {
+		display: flex;
+	}
 	h2 {
 		font-family: Roboto;
 		color: #212121;
 		font-size: 36px;
-		padding-top: 94px;
+
 		font-weight: 700;
 		line-height: 1, 17;
 		text-align: center;
@@ -2176,7 +2204,7 @@ body {
 	}
 	.activity {
 		display: flex;
-		padding-top: 50px;
+
 		padding-bottom: 94px;
 		justify-content: space-between;
 		gap: 30px;
@@ -2284,9 +2312,13 @@ body {
 	.clients {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
+		cursor: pointer;
+		justify-content: space-between;
+		padding: 0;
+		margin: 30px auto 60px;
 		gap: 30px;
 		padding-top: 50px;
-		padding-bottom: 94px;
 	}
 	.clients-elements {
 		color: #afb1b8;
