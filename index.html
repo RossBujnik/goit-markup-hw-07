@@ -31,57 +31,62 @@
 	<body>
 		<!-- Header -->
 
-		<header>
-			<div class="header-border">
-				<div class="container header-settings">
-					<div class="header-mobile">
-						<div class="menu-logo-gaps">
-							<a href="index.html"
-								><span class="brand-name01">Web</span
-								><span class="brand-name02">Studio</span></a
-							>
-
-							<div class="header-hamburger">
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="40"
-									height="40"
-									viewBox="0 0 40 40"
-									fill="none"
-								>
-									<path
-										fill-rule="evenodd"
-										clip-rule="evenodd"
-										d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
-										fill="black"
-									/>
-
-									<use href="./images/icons.svg#icon-charm_menu-hamburger" />
-								</svg>
-							</div>
-
-							<a class="menu underline" href="index.html">Agencja</a>
-
-							<a class="menu" href="portfolio.html">Portfolio</a>
-
-							<a class="menu" href="kontakt.html">Kontakt</a>
-						</div>
-					</div>
-					<div class="contacts-gaps">
-						<a class="contacts-gaps-icons" href="mailto:info@devstudio.com">
-							<svg class="header-svg" width="16px" height="12px">
-								<use href="./images/icons.svg#icon-envelope-2" />
-							</svg>
-							info@devstudio.com</a
-						>
-
-						<a class="contacts-gaps-icons" href="tel:+48111111111">
-							<svg class="header-svg" width="16px" height="12px">
-								<use href="./images/icons.svg#icon-smartphone-1" />
-							</svg>
-							+48 111 111 111</a
+		<header class="header-border">
+			<div class="container">
+				<div class="header-brand">
+					<div class="menu-logo-gaps">
+						<a href="index.html"
+							><span class="brand-name01">Web</span
+							><span class="brand-name02">Studio</span></a
 						>
 					</div>
+					<button type="button" class="header-hamburger js-open-menu">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="40"
+							height="40"
+							viewBox="0 0 40 40"
+							fill="none"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"
+								fill="black"
+							/>
+
+							<use href="./images/icons.svg#icon-charm_menu-hamburger" />
+						</svg>
+					</button>
+					<nav>
+						<ul class="header-navi">
+							<li>
+								<a class="menu underline" href="index.html">Agencja</a>
+							</li>
+							<li>
+								<a class="menu" href="portfolio.html">Portfolio</a>
+							</li>
+							<li>
+								<a class="menu" href="kontakt.html">Kontakt</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="contacts-gaps">
+					<a class="contacts-gaps-icons" href="mailto:info@devstudio.com">
+						<svg class="header-svg" width="16px" height="12px">
+							<use href="./images/icons.svg#icon-envelope-2" />
+						</svg>
+						info@devstudio.com</a
+					>
+
+					<a class="contacts-gaps-icons" href="tel:+48111111111">
+						<svg class="header-svg" width="16px" height="12px">
+							<use href="./images/icons.svg#icon-smartphone-1" />
+						</svg>
+						+48 111 111 111</a
+					>
 				</div>
 			</div>
 		</header>
