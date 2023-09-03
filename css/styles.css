@@ -981,26 +981,36 @@ body {
 /* TABLET */
 
 @media screen and (min-width: 768px) {
-	.header-settings {
+	.header-brand {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-between;
+
 		height: 80px;
 	}
 	.header-border {
+		display: inline-flex;
+		flex-direction: row;
+		justify-content: flex-start;
 		border-bottom: #ececec;
 		border-bottom-style: solid;
 		border-width: 1px;
+		height: 80px;
 	}
-
+	.header-navi {
+		display: flex;
+		align-items: flex-start;
+		gap: 60px;
+		padding-right: 101px;
+	}
 	.menu {
-		font-family: Roboto;
 		color: #212121;
+		font-family: Roboto;
 		font-size: 14px;
+		font-style: normal;
 		font-weight: 500;
-		align-items: center;
-		line-height: 1, 17;
+		line-height: normal;
+		letter-spacing: 0.28px;
 	}
 	.menu:hover {
 		color: #2196f3;
@@ -1042,20 +1052,22 @@ body {
 	}
 
 	.brand-name01 {
+		color: #2196f3;
 		font-family: Raleway;
-		color: #212121;
-		font-size: 26px;
+		font-size: 24px;
+		font-style: normal;
 		font-weight: 700;
-		line-height: 1, 17;
-		text-decoration: none;
+		line-height: normal;
+		letter-spacing: 0.72px;
 	}
 	.brand-name02 {
+		color: #212121;
 		font-family: Raleway;
-		color: #2196f3;
-		font-size: 26px;
+		font-size: 24px;
+		font-style: normal;
 		font-weight: 700;
-		line-height: 1, 17;
-		text-decoration: none;
+		line-height: normal;
+		letter-spacing: 0.72px;
 	}
 	.header-hamburger {
 		display: none;
@@ -1063,28 +1075,25 @@ body {
 	.menu-logo-gaps {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
-		gap: 46px;
+		justify-content: center;
 		padding-right: 83px;
 	}
 	.contacts-gaps {
 		display: flex;
+		text-align: left;
 		flex-direction: column;
-		align-items: baseline;
 		gap: 10px;
 		cursor: pointer;
+		padding-top: 21px;
 	}
 	.contacts-gaps-icons {
-		display: flex;
-		flex-direction: row;
+		color: #757575;
 		font-family: Roboto;
-		color: #757575;
-		font-size: 14px;
+		font-size: 12px;
+		font-style: normal;
 		font-weight: 500;
-		line-height: 1.17;
-		text-decoration: none;
-		color: #757575;
-		fill: #757575;
+		line-height: normal;
+		letter-spacing: 0.24px;
 	}
 	.contacts-gaps-icons:hover {
 		color: #2196f3;
@@ -1093,7 +1102,7 @@ body {
 	.header-svg {
 		fill: currentColor;
 		align-items: center;
-		margin-right: 10px;
+
 		transform: translateY(0.1em);
 	}
 	a {
@@ -1183,34 +1192,21 @@ body {
 
 	/* Nasze atuty */
 
-	.lorem {
+	.lorem-icons {
 		display: flex;
 		justify-content: space-between;
-		flex-direction: row;
-		padding-top: 94px;
-		gap: 30px;
-		padding-top: 30px;
-	}
-	.lorem-padding {
-		overflow-y: 0;
-	}
-	.lorem-icons {
-		display: inline-flex;
-		flex-direction: row;
-		justify-content: space-between;
+		flex-wrap: wrap;
 		margin: 60px auto;
 		padding: 0;
-		gap: 30px;
 		text-align: center;
+		gap: 30px;
 	}
 	.lorem-icons > li {
-		margin-bottom: 30px;
 	}
 
 	.lorem-elements-icons {
 		background-color: #ffffff;
-		width: 270px;
-		height: 251px;
+		width: 354px;
 	}
 
 	.lorem-elements-icons-svg {
@@ -1218,25 +1214,30 @@ body {
 		border-radius: 4px;
 		width: 100%;
 		height: 120px;
-		padding: 25px 100px;
+		padding: 25px 142px;
 	}
 
 	.main {
+		text-align: left;
 		font-family: Roboto;
 		color: #212121;
 		font-size: 14px;
 		font-weight: 700;
 		line-height: 1, 17;
-		padding-bottom: 10px;
+		padding-top: 30px;
 	}
 	.contents {
-		font-family: Roboto;
+		justify-content: space-between;
+		text-align: left;
 		color: #757575;
+		font-family: Roboto;
 		font-size: 14px;
+		font-style: normal;
 		font-weight: 400;
-		line-height: 1, 71;
+		line-height: 24px; /* 171.429% */
+		letter-spacing: 0.42px;
 		width: 270px;
-		padding-bottom: 94px;
+		padding-top: 10px;
 	}
 	/* Czym się zajmujemy */
 
@@ -1420,13 +1421,11 @@ body {
 		font-weight: 700;
 		line-height: 1, 17;
 		text-decoration: none;
-		padding-bottom: 9px;
 	}
 	.adress-regular {
 		padding-bottom: 60px;
 		padding-top: 20px;
-
-		gap: 9px;
+		gap: 8px;
 	}
 
 	.place {
@@ -1447,7 +1446,6 @@ body {
 		line-height: 1, 71;
 		text-decoration: none;
 		padding-bottom: 9px;
-		padding-right: 70px;
 	}
 	.footer-main-position {
 		display: flex;
