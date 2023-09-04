@@ -1001,19 +1001,15 @@ body {
 @media screen and (min-width: 768px) {
 	.header-brand {
 		display: flex;
-		flex-direction: row;
 		align-items: center;
 
 		height: 80px;
 	}
 	.header-border {
 		display: inline-flex;
-		flex-direction: row;
-		justify-content: flex-start;
 		border-bottom: #ececec;
 		border-bottom-style: solid;
 		border-width: 1px;
-		height: 77px;
 	}
 	.header-navi {
 		display: flex;
@@ -1046,12 +1042,6 @@ body {
 		height: 4px;
 		border-radius: 4px;
 		background-color: #2196f3;
-	}
-
-	.underline {
-		display: flex;
-		justify-content: space-between;
-		color: #2196f3;
 	}
 	.underline::after {
 		position: absolute;
@@ -1098,7 +1088,6 @@ body {
 	}
 	.contacts-gaps {
 		display: flex;
-		text-align: left;
 		flex-direction: column;
 		gap: 10px;
 		cursor: pointer;
@@ -1399,7 +1388,6 @@ body {
 		padding-top: 30px;
 	}
 	.clients-elements {
-		align-items: center;
 		text-align: center;
 		color: #afb1b8;
 		fill: currentColor;
@@ -1407,7 +1395,10 @@ body {
 		height: 92px;
 		width: 226px;
 		border-radius: 4px;
-		padding: 5px 30.73px 5.773px 31px;
+		padding-left: 60px;
+		padding-top: 16px;
+		padding-right: 60px;
+		padding-bottom: 16px;
 	}
 	.clients-elements:hover {
 		color: #2196f3;
