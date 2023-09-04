@@ -633,8 +633,8 @@ body {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 528px;
-		height: 581px;
+		width: 450px;
+		height: 609px;
 		background: #ffffff;
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 			0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -658,14 +658,14 @@ body {
 		margin: 6px;
 	}
 	.modal-title {
-		font-family: "Roboto";
+		color: #212121;
+		text-align: center;
+		font-family: Roboto;
+		font-size: 20px;
 		font-style: normal;
 		font-weight: 700;
-		font-size: 20px;
-		line-height: 23px;
-		text-align: center;
-		letter-spacing: 0.03em;
-		color: #212121;
+		line-height: 30px; /* 150% */
+		letter-spacing: 0.6px;
 		padding-top: 40px;
 		padding-bottom: 12px;
 	}
@@ -693,7 +693,7 @@ body {
 	}
 	.input-label {
 		display: flex;
-		width: 448px;
+		width: 370px;
 		height: 40px;
 		padding-top: 11px;
 		padding-bottom: 11px;
@@ -747,8 +747,15 @@ body {
 	}
 	.modal-form-look {
 		display: flex;
+		text-align: center;
 		flex-direction: column;
 		align-items: center;
+		width: 370px;
+		padding-left: 40px;
+	}
+	.label.hover: {
+		display: flex;
+		justify-content: center;
 	}
 	.label-hover:hover {
 		border-color: #2196f3;
@@ -758,7 +765,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		resize: none;
-		width: 448px;
+		width: 370px;
 		height: 120px;
 		padding-left: 16px;
 		padding-top: 12px;
@@ -771,6 +778,7 @@ body {
 	}
 	.agree-look {
 		padding-top: 20px;
+		justify-content: space-between;
 	}
 	.modal-label {
 		position: relative;
@@ -814,9 +822,13 @@ body {
 	}
 
 	.form-label {
-		font-size: 14px;
-		line-height: 1.71;
 		color: #757575;
+		font-family: Roboto;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 0.36px;
 	}
 	.modal-title-look {
 		display: flex;
@@ -835,7 +847,13 @@ body {
 	}
 	.modal-links {
 		color: #2196f3;
-		text-decoration: underline;
+		font-family: Roboto;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 0.36px;
+		text-decoration-line: underline;
 	}
 	.modal-button {
 		justify-content: center;
@@ -995,7 +1013,7 @@ body {
 		border-bottom: #ececec;
 		border-bottom-style: solid;
 		border-width: 1px;
-		height: 80px;
+		height: 77px;
 	}
 	.header-navi {
 		display: flex;
@@ -1948,7 +1966,11 @@ body {
 		border-bottom-style: solid;
 		border-width: 1px;
 	}
-
+	.header-navi {
+		display: flex;
+		align-items: flex-start;
+		gap: 60px;
+	}
 	.menu {
 		font-family: Roboto;
 		color: #212121;
@@ -2017,13 +2039,14 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 46px;
+		padding-right: 93px;
 	}
 	.contacts-gaps {
 		display: flex;
 		flex-direction: row;
+		justify-content: flex-end;
 		align-items: center;
-		gap: 50px;
+		text-align: center;
 		cursor: pointer;
 	}
 	.contacts-gaps-icons {
@@ -2133,7 +2156,7 @@ body {
 	/* Nasze atuty */
 
 	.lorem-icons {
-		display: inline-flex;
+		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		margin: 60px auto;
@@ -2146,13 +2169,14 @@ body {
 
 	.lorem-elements-icons {
 		background-color: #ffffff;
+		width: 270px;
+		height: 120px;
 	}
 
 	.lorem-elements-icons-svg {
 		background: #f5f4fa;
 		border-radius: 4px;
 		width: 100%;
-		height: 120px;
 		padding: 25px 100px;
 	}
 
@@ -2172,7 +2196,6 @@ body {
 		font-size: 14px;
 		font-weight: 400;
 		line-height: 1, 71;
-		width: 270px;
 	}
 
 	/* Czym się zajmujemy */
@@ -2385,8 +2408,13 @@ body {
 		padding-bottom: 9px;
 		padding-right: 70px;
 	}
+	.footer-main-position {
+		display: flex;
+		justify-content: flex-start;
+	}
 	.footer-section-1 {
-		padding-top: 60px;
+		text-align: left;
+		justify-content: flex-start;
 	}
 	.footer-section-2 {
 		float: left;
