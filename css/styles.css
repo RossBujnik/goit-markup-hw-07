@@ -516,7 +516,7 @@ body {
 		display: flex;
 		align-items: center;
 		background-color: #2f303a;
-		width: 450px;
+		width: 100%;
 		height: 50px;
 		font-family: "Roboto";
 		font-style: normal;
@@ -1185,6 +1185,9 @@ body {
 	.header-hamburger {
 		display: none;
 	}
+	.menu-container {
+		display: none;
+	}
 	.menu-logo-gaps {
 		display: flex;
 		align-items: center;
@@ -1565,6 +1568,10 @@ body {
 	.footer-main-position {
 		display: flex;
 		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: baseline;
+		column-gap: 144px;
+		justify-content: center;
 	}
 	.footer-section-1 {
 		justify-content: center;
