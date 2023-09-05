@@ -2090,6 +2090,7 @@ body {
 		display: flex;
 		align-items: flex-start;
 		gap: 60px;
+		margin-right: 235px;
 	}
 	.menu {
 		font-family: Roboto;
