@@ -654,6 +654,7 @@ body {
 		font-weight: 500;
 		line-height: normal;
 		letter-spacing: 0.8px;
+		margin-left: 40px;
 	}
 
 	.mobile-menu-element {
@@ -708,6 +709,7 @@ body {
 	.mobile-socials {
 		margin-top: 64px;
 		margin-bottom: 48px;
+		margin-left: 40px;
 		display: flex;
 		flex-wrap: wrap;
 		gap: 5px;
