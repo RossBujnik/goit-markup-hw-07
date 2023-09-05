@@ -1594,8 +1594,8 @@ body {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 528px;
-		height: 581px;
+		width: 450px;
+		height: 609px;
 		background: #ffffff;
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 			0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1607,8 +1607,8 @@ body {
 		justify-content: center;
 		width: 30px;
 		height: 30px;
-		top: 14px;
-		right: 14px;
+		top: 8px;
+		right: 8px;
 		fill: #000000;
 		background: #ffffff;
 		border: 1px solid rgba(0, 0, 0, 0.1);
@@ -1616,17 +1616,17 @@ body {
 		cursor: pointer;
 	}
 	.close-button {
-		margin: 6px;
+		margin: 5px;
 	}
 	.modal-title {
-		font-family: "Roboto";
+		color: #212121;
+		text-align: center;
+		font-family: Roboto;
+		font-size: 20px;
 		font-style: normal;
 		font-weight: 700;
-		font-size: 20px;
-		line-height: 23px;
-		text-align: center;
-		letter-spacing: 0.03em;
-		color: #212121;
+		line-height: 30px; /* 150% */
+		letter-spacing: 0.6px;
 		padding-top: 40px;
 		padding-bottom: 12px;
 	}
@@ -1654,7 +1654,7 @@ body {
 	}
 	.input-label {
 		display: flex;
-		width: 448px;
+		width: 370px;
 		height: 40px;
 		padding-top: 11px;
 		padding-bottom: 11px;
@@ -1707,9 +1707,13 @@ body {
 		margin-top: 11px;
 	}
 	.modal-form-look {
-		display: flex;
-		flex-direction: column;
 		align-items: center;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.label.hover: {
+		display: flex;
+		justify-content: center;
 	}
 	.label-hover:hover {
 		border-color: #2196f3;
@@ -1719,7 +1723,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		resize: none;
-		width: 448px;
+		width: 370px;
 		height: 120px;
 		padding-left: 16px;
 		padding-top: 12px;
@@ -1732,11 +1736,12 @@ body {
 	}
 	.agree-look {
 		padding-top: 20px;
+		padding-left: 20px;
+		justify-content: space-between;
 	}
 	.modal-label {
 		position: relative;
-		height: 24px;
-		margin: 20px 54px 30px 77px;
+		justify-content: space-between;
 	}
 	.modal-checkbox {
 		position: absolute;
@@ -1775,9 +1780,13 @@ body {
 	}
 
 	.form-label {
-		font-size: 14px;
-		line-height: 1.71;
 		color: #757575;
+		font-family: Roboto;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 0.36px;
 	}
 	.modal-title-look {
 		display: flex;
@@ -1796,7 +1805,13 @@ body {
 	}
 	.modal-links {
 		color: #2196f3;
-		text-decoration: underline;
+		font-family: Roboto;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 0.36px;
+		text-decoration-line: underline;
 	}
 	.modal-button {
 		justify-content: center;
@@ -1824,7 +1839,6 @@ body {
 		letter-spacing: 0.06em;
 		color: #ffffff;
 	}
-
 	/* portfolio.html */
 	img {
 		display: block;
@@ -2525,8 +2539,8 @@ body {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 528px;
-		height: 581px;
+		width: 450px;
+		height: 609px;
 		background: #ffffff;
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 			0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -2538,8 +2552,8 @@ body {
 		justify-content: center;
 		width: 30px;
 		height: 30px;
-		top: 14px;
-		right: 14px;
+		top: 8px;
+		right: 8px;
 		fill: #000000;
 		background: #ffffff;
 		border: 1px solid rgba(0, 0, 0, 0.1);
@@ -2547,17 +2561,17 @@ body {
 		cursor: pointer;
 	}
 	.close-button {
-		margin: 6px;
+		margin: 5px;
 	}
 	.modal-title {
-		font-family: "Roboto";
+		color: #212121;
+		text-align: center;
+		font-family: Roboto;
+		font-size: 20px;
 		font-style: normal;
 		font-weight: 700;
-		font-size: 20px;
-		line-height: 23px;
-		text-align: center;
-		letter-spacing: 0.03em;
-		color: #212121;
+		line-height: 30px; /* 150% */
+		letter-spacing: 0.6px;
 		padding-top: 40px;
 		padding-bottom: 12px;
 	}
@@ -2585,7 +2599,7 @@ body {
 	}
 	.input-label {
 		display: flex;
-		width: 448px;
+		width: 370px;
 		height: 40px;
 		padding-top: 11px;
 		padding-bottom: 11px;
@@ -2638,9 +2652,13 @@ body {
 		margin-top: 11px;
 	}
 	.modal-form-look {
-		display: flex;
-		flex-direction: column;
 		align-items: center;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	.label.hover: {
+		display: flex;
+		justify-content: center;
 	}
 	.label-hover:hover {
 		border-color: #2196f3;
@@ -2650,7 +2668,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		resize: none;
-		width: 448px;
+		width: 370px;
 		height: 120px;
 		padding-left: 16px;
 		padding-top: 12px;
@@ -2663,11 +2681,12 @@ body {
 	}
 	.agree-look {
 		padding-top: 20px;
+		padding-left: 20px;
+		justify-content: space-between;
 	}
 	.modal-label {
 		position: relative;
-		height: 24px;
-		margin: 20px 54px 30px 77px;
+		justify-content: space-between;
 	}
 	.modal-checkbox {
 		position: absolute;
@@ -2706,9 +2725,13 @@ body {
 	}
 
 	.form-label {
-		font-size: 14px;
-		line-height: 1.71;
 		color: #757575;
+		font-family: Roboto;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 0.36px;
 	}
 	.modal-title-look {
 		display: flex;
@@ -2727,7 +2750,13 @@ body {
 	}
 	.modal-links {
 		color: #2196f3;
-		text-decoration: underline;
+		font-family: Roboto;
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 0.36px;
+		text-decoration-line: underline;
 	}
 	.modal-button {
 		justify-content: center;
@@ -2755,7 +2784,6 @@ body {
 		letter-spacing: 0.06em;
 		color: #ffffff;
 	}
-
 	/* portfolio.html */
 	img {
 		display: block;
